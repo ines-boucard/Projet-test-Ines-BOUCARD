@@ -57,6 +57,21 @@ namespace Projet_test_Tests
             Assert.Contains(palindrome + langue.BienDit,sortie);
         }
 
+        [Theory(DisplayName = "ETANT DONNE un utilisateur parlant une langue ET que la période de la journée est période QUAND l'app démarre ALORS bonjour de cette langue à cette période est envoyé")]
+        [MemberData(nameof(LanguesEtPériodes))]
+        public void Bonjour_Test(ILangue langue, PériodeJournée période)
+        {
+            // Arrange : ETANT DONNE un utilisateur parlant une langue
+            // ET que la période de la journée est "période"
+            var ohce = new OhceBuilder().AyantPourLangue(langue).AyantPourPériodeDeLaJournée(période).Build();
+
+            // Act : QUAND l'app démarre
+            var sortie = ohce.Palindrome(string.Empty);
+
+            // Assert : ALORS "bonjour" de cette langue à cette période est envoyé
+            Assert.StartsWith(langue.DireBonjour(période), sortie);
+        }
+
 
     }
 }
