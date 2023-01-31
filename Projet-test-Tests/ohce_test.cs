@@ -72,6 +72,20 @@ namespace Projet_test_Tests
             Assert.StartsWith(langue.DireBonjour(période), sortie);
         }
 
+        [Theory(DisplayName = "ETANT DONNE un utilisateur parlant une langue QUAND l'app se ferme  ALORS auRevoir dans cette langue est envoyé")]
+        [MemberData(nameof(LanguesSeules))]
+        public void FermetureTest(ILangue langue)
+        {
+            // Arrange : ETANT DONNE un utilisateur parlant une langue
+            var ohce = new OhceBuilder().AyantPourLangue(langue).Build();
+
+            // Act : QUAND l'app démarre
+            var sortie = ohce.Palindrome(string.Empty);
+
+            // Assert : ALORS auRevoir dans cette langue est envoyé
+            Assert.EndsWith(langue.AuRevoir, sortie);
+        }
+
 
     }
 }
