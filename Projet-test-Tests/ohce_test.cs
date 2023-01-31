@@ -74,7 +74,7 @@ namespace Projet_test_Tests
 
         [Theory(DisplayName = "ETANT DONNE un utilisateur parlant une langue QUAND l'app se ferme  ALORS auRevoir dans cette langue est envoyé")]
         [MemberData(nameof(LanguesSeules))]
-        public void FermetureTest(ILangue langue)
+        public void Fermeture_Test(ILangue langue)
         {
             // Arrange : ETANT DONNE un utilisateur parlant une langue
             var ohce = new OhceBuilder().AyantPourLangue(langue).Build();
@@ -85,6 +85,7 @@ namespace Projet_test_Tests
             // Assert : ALORS auRevoir dans cette langue est envoyé
             Assert.EndsWith(langue.AuRevoir, sortie);
         }
+
 
 
     }

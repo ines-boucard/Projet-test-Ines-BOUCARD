@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet-test-Ines-BOUCARD", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet-test-Tests", "Projet-test-Tests\Projet-test-Tests.csproj", "{9A566E50-332A-4293-89B5-A8CB4C57DFA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet-test-console", "Projet-test-console\Projet-test-console.csproj", "{578E5185-31D5-4C16-A82C-76080B5D3DB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9A566E50-332A-4293-89B5-A8CB4C57DFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A566E50-332A-4293-89B5-A8CB4C57DFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A566E50-332A-4293-89B5-A8CB4C57DFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578E5185-31D5-4C16-A82C-76080B5D3DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578E5185-31D5-4C16-A82C-76080B5D3DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578E5185-31D5-4C16-A82C-76080B5D3DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578E5185-31D5-4C16-A82C-76080B5D3DB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

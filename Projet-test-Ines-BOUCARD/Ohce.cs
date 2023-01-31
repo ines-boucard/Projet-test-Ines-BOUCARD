@@ -18,16 +18,16 @@ public class Ohce
         var stringBuilder = 
             new StringBuilder();
 
-        stringBuilder.Append(Saluer());
+        stringBuilder.Append(Saluer()+"\n");
 
         var reversed = new string(
             input.Reverse().ToArray()
         );
 
-        stringBuilder.Append(reversed);
+        stringBuilder.Append(reversed + "\n");
 
         if (reversed.Equals(input))
-            stringBuilder.Append(_langue.BienDit);
+            stringBuilder.Append(_langue.BienDit + "\n");
 
         stringBuilder.Append(AuRevoir());
 
